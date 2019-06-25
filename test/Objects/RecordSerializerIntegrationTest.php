@@ -40,7 +40,7 @@ class RecordSerializerIntegrationTest extends AbstractFunctionalTestCase
      *
      * @throws \FlixTech\SchemaRegistryApi\Exception\SchemaRegistryException
      */
-    public function it_cannot_evolve_incompatible_schema(RecordSerializer $serializer): void
+    public function it_cannot_evolve_incompatible_schema(RecordSerializer $serializer)
     {
         $serializer->encodeRecord('test-value', $this->invalidSchema, self::TEST_RECORD);
     }

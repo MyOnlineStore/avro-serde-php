@@ -22,16 +22,35 @@
       "email": "thomas.ploch@flixbus.com"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/MyOnlineStore/avro-php"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/MyOnlineStore/fantasy-land"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/MyOnlineStore/php-functional"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/MyOnlineStore/schema-registry-php-client"
+    }
+  ],
   "require": {
-    "php": "^7.1",
+    "php": "^7.0",
     "beberlei/assert": "~2.7",
-    "flix-tech/confluent-schema-registry-api": "^6.0.0",
-    "flix-tech/avro-php": "^3.0.0",
-    "widmogrod/php-functional": "^4.2|^5.0"
+    "flix-tech/confluent-schema-registry-api": "dev-backport-7.0",
+    "flix-tech/avro-php": "dev-backport-7.0",
+    "functional-php/fantasy-land": "dev-backport-7.0",
+    "widmogrod/php-functional": "dev-backport-7.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "~7.0",
-    "phpstan/phpstan-shim": "^0.10",
+    "phpunit/phpunit": "~6.0",
+    "phpstan/phpstan-shim": "^0.9.2",
     "phpbench/phpbench": "~0.9",
     "vlucas/phpdotenv": "~2.4",
     "symfony/serializer": "^2.8|^3.1|^4.0"
@@ -55,6 +74,11 @@
       "FlixTech\\AvroSerializer\\Test\\": "test/",
       "FlixTech\\AvroSerializer\\Benchmarks\\": "benchmarks/",
       "FlixTech\\AvroSerializer\\Examples\\": "examples/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.0.33"
     }
   },
   "extra": {
