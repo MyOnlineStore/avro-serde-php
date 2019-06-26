@@ -43,10 +43,10 @@
   "require": {
     "php": "^7.0",
     "beberlei/assert": "~2.7",
-    "flix-tech/confluent-schema-registry-api": "dev-backport-7.0",
-    "flix-tech/avro-php": "dev-backport-7.0",
-    "functional-php/fantasy-land": "dev-backport-7.0",
-    "widmogrod/php-functional": "dev-backport-7.0"
+    "flix-tech/confluent-schema-registry-api": "dev-master",
+    "flix-tech/avro-php": "dev-master",
+    "functional-php/fantasy-land": "dev-master",
+    "widmogrod/php-functional": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "~6.0",
