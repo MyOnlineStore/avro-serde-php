@@ -83,6 +83,9 @@ class DefinitionInterfaceResolverTest extends TestCase
                 return self::$valueSchema;
             }
 
+            /**
+             * @return string|null
+             */
             public static function keySchemaJson()
             {
                 return self::$keySchema;
