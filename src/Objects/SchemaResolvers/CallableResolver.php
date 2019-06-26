@@ -30,7 +30,10 @@ class CallableResolver implements SchemaResolverInterface
         return AvroSchema::parse(\call_user_func($this->valueSchemaResolverCallable, $record));
     }
 
-    public function keySchemaFor($record): ?AvroSchema
+    /**
+     * @return AvroSchema|null
+     */
+    public function keySchemaFor($record)
     {
         if (!$this->keySchemaResolverCallable) {
             return null;
